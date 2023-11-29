@@ -19,4 +19,8 @@ export default {
   <AppJambo />
   <AppFooter />
 </template>
-<style scoped></style>
+<style >
+body {
+  margin: 0;
+}
+</style>

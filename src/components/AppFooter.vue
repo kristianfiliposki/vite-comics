@@ -65,7 +65,7 @@ export default {
                 <div>
                     {{ tool.nome }}
                 </div>
-                <div v-for="option in tool.options">
+                <div v-for="option in tool.options" class="SubOptions">
                     {{ option }}
                 </div>
             </div>
@@ -76,7 +76,7 @@ export default {
 <style scoped>
 .container {
     width: 100%;
-    height: 60vh;
+    height: 45vh;
     background-image: url(../img/footer-bg.jpg);
     background-size: cover;
     color: white;
@@ -94,5 +94,9 @@ export default {
 
 .option {
     margin: 2px 10px;
+}
+
+.SubOptions {
+    color: grey;
 }
 </style>

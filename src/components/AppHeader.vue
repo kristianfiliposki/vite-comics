@@ -59,9 +59,8 @@ section {
 }
 
 #box-tools div:hover {
-    border-bottom: 2px solid #1c1c1c;
-    color: #1c1c1c;
-    padding-bottom: 2em;
+    border-bottom: 2px solid blue;
+    color: blue;
 
 }
 </style>
