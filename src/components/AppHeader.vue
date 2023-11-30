@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "header",
+    name: "AppHeader",
     data() {
         return {
             tools: ["characters", "comics", " movies", " tv", "games", "collectibles", "video", " fans", " news", " shop",]
@@ -39,11 +39,13 @@ section {
 
 .foto {
     height: 80%;
+    display: flex;
+    align-items: center;
 }
 
 .foto img {
-    height: 100%;
-    width: 100%;
+    padding-top: 22px;
+    width: 20%;
 
 }
 

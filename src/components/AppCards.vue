@@ -1,20 +1,32 @@
 <script>
 export default {
-    props: ["boxes"],
+    props: ["box"],
 }
-import boxes from '../App.vue'
 
 </script>
-<template>
-    <div id="container">
-        <div class="WrapperBox">
-            <div v-for="element in boxes " class="box">
-                {{ element.series }}
-                <div class="foto">
-                    <img :src="element.thumb" alt="">
-                </div>
-            </div>
+<template >
+    <div class="box">
+        <div>
+            {{ box.series }}
+        </div>
+        <div class="foto">
+            <img :src="box.thumb" alt="">
         </div>
     </div>
 </template>
-<style></style>
+<style>
+.box {
+    margin: 2em;
+    width: calc((100% / 6) - 2em);
+}
+
+.foto {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+}
+</style>
